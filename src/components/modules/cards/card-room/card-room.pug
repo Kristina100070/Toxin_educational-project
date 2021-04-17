@@ -1,0 +1,25 @@
+
+mixin card-room(number, type, price, review)
+  article.card-room 
+    img.card-room__img(src=require('../images/image.png').default)
+    .card-room__description
+      .card-room__wrap
+        .card-room__numder
+          .card-room__number_icon №
+          .card-room__num=number
+          h3.card-room__type=type
+        .flex 
+          .card-room__sum= price
+          .card-room__sum.card-room_mr &#8381;
+          p.card-room_p в сутки
+      hr.card-room_border
+      .card-room__wrap 
+        .card-room__stars 
+          .star.star_activ
+          .star
+          .star
+          .star
+          .star
+        .flex
+          .card-room__sum.card-room_mr= review
+          p.card-room_p Отзывов

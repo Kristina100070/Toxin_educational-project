@@ -1,7 +1,16 @@
+
+
+
 html(lang="ru")
   head
     meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title= "Учимся работать с шаблонизатором Pug"
   body
-      h1 Hello, World!
-      script(src="<%= htmlWebpackPlugin.files.js %>")
+    include ../components/modules/header/header
+    
+    .main-section
+      .content-container.search-container
+        include ../components/modules/cards/card-search/card-search
+        p.paragraph-details Лучшие номера для вашей работы, отдыха и просто вдохновения
+    include ../components/modules/footer/footer

@@ -1,0 +1,7 @@
+include ./dropdown
+
+mixin dropdown-date()
+  .date__container
+    +dropdown('прибытие', 'ДД.ММ.ГГГГ')(class='dropdown_first js-datepicker datepicker-here')
+    +dropdown('выезд', 'ДД.ММ.ГГГГ')
+    

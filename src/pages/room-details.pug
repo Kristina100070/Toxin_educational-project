@@ -1,0 +1,24 @@
+include ../components/utils/dropdown/dropdown
+include ../components/modules/cards/card-room/card-room
+- var arr = [{ number: '888', type: 'люкс', price: '9990', review: '145'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'},{number: '888', type: '', price: '222', review: '11'}]
+
+
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= "Поиск номеров"
+  body
+    include ../components/modules/header/header
+    
+    .container.content-container.container_flex-column
+      asaid.room-details__filter 
+        +dropdown('даты пребывания в отеле', 'text', '19 авг - 23 авг','', 'dropdown__icon-down', '')
+        +dropdown('гости', 'text', '3 гостя, 1 младенец','', 'dropdown__icon-down', '')
+        input(type='range')
+      main.room-details 
+        h1 Номера, которые мы для вас подобрали
+        .room-details__container
+          each val in arr
+            +card-room(val.number, val.type, val.price, val.review)
+        .room-details__pagination

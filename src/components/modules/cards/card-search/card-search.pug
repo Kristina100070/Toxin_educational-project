@@ -1,0 +1,10 @@
+include ../../../utils/dropdown/dropdown-date
+include ../../../utils/dropdown/dropdown-expended
+include ../../../utils/buttons/button
+
+form.card-search
+  h1 Найдём номера под ваши пожелания
+  +dropdown-date
+  .card-search__wrap
+    +dropdown-expended
+  +button('подобрать номер')(class='button_dark button js-button__search')

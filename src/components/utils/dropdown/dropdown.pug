@@ -1,0 +1,7 @@
+mixin dropdown(title, type, placeholder, value, className, id)
+  .dropdown(class!=attributes.class)
+    h3= title
+    .dropdown__input(id=id)
+      input(type=type)(value=value)(placeholder=placeholder)&attributes(attributes).input
+      button(class=''+ className)
+  

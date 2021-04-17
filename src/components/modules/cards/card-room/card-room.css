@@ -1,0 +1,81 @@
+.card-room {
+    width: 270px;
+    height: 257px;
+   
+    
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+border-radius: 4px;
+}
+.card-room__description {
+    display: flex;
+    flex-direction: column;
+    min-height: 106px;
+    
+    padding: 20px 17px 19px 20px;
+    
+}
+.card-room__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-room__numder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+   
+}
+.card-room__number_icon {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 5px;
+}
+.card-room__num {
+ font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    margin-right: 5px;
+}
+.card-room__type {
+    color: #BC9CFF;
+}
+
+.card-room__sum {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+color: rgba(31, 32, 65, 0.5);
+margin-top: 3px;
+}
+.card-room_mr {
+    margin-right: 5px;
+}
+.card-room__stars {
+    min-width: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.card-room_border {
+    height: 1px;
+    background: rgba(31, 32, 65, 0.1);
+    margin: 10px 0 8px 0;
+}
+
+.star {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../../../images/star_border.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.star_activ {
+    background-image: url(../../../../images/star.png);
+}

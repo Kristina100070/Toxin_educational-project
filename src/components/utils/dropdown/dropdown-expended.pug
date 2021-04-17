@@ -1,0 +1,31 @@
+include ./dropdown
+
+- var val = 'Сколько гостей';
+
+mixin dropdown-expended()
+  +dropdown('Гости', 'button', '', val, 'dropdown__icon-down', 'button-guest')
+  .dropdown__items 
+    .dropdown__item
+      h3 Взрослые
+      .item__counter
+        input(type='button' value='-' ).item__counter_button
+        p.item__counter_value 0
+        input(type='button' value='+').item__counter_button
+        input(type="hidden" value="0" id="num1")
+    .dropdown__item
+      h3 Дети
+      .item__counter
+        input(type='button' value='-' ).item__counter_button
+        p.item__counter_value 0
+        input(type='button' value='+' ).item__counter_button
+        input(type="hidden" value="0" id="num2")
+    .dropdown__item
+      h3 Взрослые
+      .item__counter
+        input(type='button' value='-' ).item__counter_button
+        p.item__counter_value 0
+        input(type='button' value='+').item__counter_button
+        input(type="hidden" value="0" id="num3")
+    .dropdown__button-container
+      button.dropdown__button Очистить
+      button.dropdown__button Применить

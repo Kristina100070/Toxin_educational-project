@@ -1,0 +1,7 @@
+.date__container {
+    display: flex;
+    flex-direction: row;
+}
+.calendar {
+    display: none;
+}

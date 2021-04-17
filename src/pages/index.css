@@ -1,0 +1,23 @@
+.main-section {
+    background-image: url(../images/image\ 3.jpg);    
+    height: 830px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    margin: 0 auto;
+}
+.search-container {
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    
+}
+.paragraph-details {
+    max-width: 297px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: -2px;
+    text-align: end;
+}

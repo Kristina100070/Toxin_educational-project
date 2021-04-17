@@ -1,0 +1,29 @@
+include ../../utils/buttons/button
+- var user = false
+
+header
+  .container
+    .content-container
+      .header__container
+        a(href='/').header__logo
+        nav.header__mobile-menu
+        nav.header__nav
+          ul.header__nav_items
+            li.header__nav_item 
+              a.nav__item_link.nav__item_link-bold О нас
+            li.header__nav_item 
+              a.nav__item_link Услуги
+              button.nav__item_button 
+            li.header__nav_item 
+              a.nav__item_link Вакансии
+            li.header__nav_item 
+              a.nav__item_link Новости
+            li.header__nav_item 
+              a.nav__item_link Соглашения
+              button.nav__item_button
+          .header__user-container
+            if user
+              a.header__user-name Юлий Цезарь
+            else
+              +button('войти')(class="button button__header button_light")
+              +button('Зарегистрироваться')(class="button button__header button_dark")

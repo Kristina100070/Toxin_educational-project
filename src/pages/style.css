@@ -1,0 +1,76 @@
+@import url('../vendor/fonts.css');
+
+@import url('../components/modules/modules.css');
+@import url('../components/utils/utils.css');
+@import url('../pages/index.css');
+@import url('../pages/room-details.css');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+ 
+	
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+}
+
+body li{
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.75);
+text-transform: none;
+font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: rgba(31, 32, 65, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+font-family: "Montserrat", sans-serif;
+  color: rgba(31, 32, 65, 0.75);
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.content-container {
+  width: 81%;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+.container_flex-column {
+display: flex;
+flex-direction: row;
+
+}
+.flex {
+  display: flex;
+}
